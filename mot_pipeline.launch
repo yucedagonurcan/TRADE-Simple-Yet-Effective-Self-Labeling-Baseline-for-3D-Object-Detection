@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="cloud_topic" default="/carla/ego_vehicle/lidar"/>
+
+    <include file="$(find patchworkpp)/launch/demo.launch">
+      <arg name="cloud_topic" value="$(arg cloud_topic)"/>
+    </include>
+
+</launch>
